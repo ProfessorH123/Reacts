@@ -1,0 +1,65 @@
+* , *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.women{
+    min-height: 100vh;
+    background:#eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.women div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.women span{
+    position: relative;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.women span:hover , .women span:focus , .women span:active{
+    cursor: pointer;
+}
+.women span i{
+    font-size: 60px;
+    transition: all ease 1s;
+}
+.women span:hover i{
+    font-size: 70px;
+    transition: all ease 1s;
+}
+.women span span{
+    padding: 10px 20px;
+    width: 100px;
+    border-radius: 6px;
+    background-color: #111;
+    position: absolute;
+    left: 30%;
+    top: -30%;
+    transform-origin: left;
+    --scale: 0;
+    opacity: 0;
+    transform: translateY(-50%) scale(var(--scale)) ;
+    transition: opacity 0.15s ease , transform 0.15s ease;
+}
+.women span span::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    background-color: inherit;
+    left: 25px;
+    top: 100%;
+    transform: translate(-40% , -50%) rotate(45deg);
+}
+.women span:hover span , .women span:focus span, .women span:active span{
+    --scale:1;
+    opacity: 1;
+}

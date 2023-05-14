@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="women">
+        <div class="icons">
+            <span class="icon"><i onclick="play_like();">👍</i> <span>LIKE</span></span>
+            <span class="icon"><i onclick="play_love();">❤️</i> <span>LOVE</span></span>
+            <span class="icon"><i onclick="play_haha();">😂</i> <span>HAHA</span></span>
+            <span class="icon"><i onclick="play_cry();">😢</i> <span>SAD</span></span>
+            <span class="icon"><i onclick="play_women();">☕️</i> <span>WOMEN</span></span>
+            <span class="icon"><i onclick="play_angry();">😡</i> <span>ANGRY</span></span>
+        </div>
+    </div>
+
+<script>
+    function play_women()
+    {
+        let audio = new Audio('women.mp3');
+        audio.play();
+    }
+    function play_angry()
+    {
+        let audio = new Audio('aaaauuughhhh-meme-sound-effect.mp3');
+        audio.play();
+    }
+    function play_haha()
+    {
+        let audio = new Audio('funny-laugh-sound-effects.mp3');
+        audio.play();
+    }
+    function play_cry()
+    {
+        let audio = new Audio('crying-black-man-sad.mp3');
+        audio.play();
+    }
+    function play_like()
+    {
+        let audio = new Audio('i-like-to-move-it-move-it-georgian.mp3');
+        audio.play();
+    }
+    function play_love()
+    {
+        let audio = new Audio('love-me-again.mp3');
+        audio.play();
+    }
+</script>
+</body>
+</html>
